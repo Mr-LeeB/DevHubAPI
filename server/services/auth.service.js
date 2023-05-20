@@ -51,6 +51,7 @@ const login_Service = async (user) => {
       status: STATUS_CODE.NOT_FOUND,
       success: false,
       message: 'Email does not exist!',
+      content: {},
     };
   }
 
@@ -61,6 +62,7 @@ const login_Service = async (user) => {
       status: STATUS_CODE.BAD_REQUEST,
       success: false,
       message: 'Invalid password!',
+      content: {},
     };
   }
 
