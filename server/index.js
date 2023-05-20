@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: 'https://social-network-vite-yzyn-3v0dryoov-zloganz.vercel.app',
+    origin: 'https://social-network-vite.vercel.app',
     credentials: true,
   }),
 );
