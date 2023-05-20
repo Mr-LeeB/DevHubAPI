@@ -44,9 +44,7 @@ const login_Service = async (user) => {
   const { email, password } = user;
 
   // Check for invalid user
-  const userFin = await User.CheckEmail(email)
-
-  const userFind = await userFin.select('+password');
+  const userFind = await User.CheckEmail(email);
 
   if (!userFind) {
     return {
