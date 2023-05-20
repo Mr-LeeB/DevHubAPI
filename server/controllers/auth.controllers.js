@@ -20,7 +20,7 @@ const login = async (req, res) => {
     }
   } catch (error) {
     console.log(error);
-    res.status(STATUS_CODE.SERVER_ERROR).send({ success: false, message: error });
+    res.status(STATUS_CODE.SERVER_ERROR).send({ success: false, message: user });
   }
 };
 
