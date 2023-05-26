@@ -82,7 +82,7 @@ const login_Github = async (req, res) => {
     return res.send(
       `<script>window.opener.postMessage(${JSON.stringify(
         content,
-      )}, 'http://localhost:3000'); window.close();</script>`,
+      )}, 'https://devhubsite.vercel.app'); window.close();</script>`,
     );
   } catch (error) {
     console.log(error);
